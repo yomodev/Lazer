@@ -1,0 +1,2198 @@
+<levels>
+  <board name="1.01" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="5" type="Lazer.Wall" />
+    <block x="3" y="6" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.02" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="6" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Splitter" direction="Down" />
+    <block x="5" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.03" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Mirror" angle="NWSE" />
+    <block x="5" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.04" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Receiver" direction="Right" color="Yellow" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="5" y="5" type="Lazer.Prism" direction="Up" />
+    <block x="5" y="10" type="Lazer.Receiver" direction="Up" color="Fuchsia" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Wall" />
+    <block x="6" y="8" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="8" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="6" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.Wall" />
+    <block x="9" y="8" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.05" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Receiver" direction="Right" color="Yellow" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="3" y="5" type="Lazer.Splitter" direction="Up" />
+    <block x="3" y="8" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="8" type="Lazer.Wall" />
+    <block x="5" y="9" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="9" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.Wall" />
+    <block x="9" y="7" type="Lazer.Wall" />
+    <block x="9" y="8" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.06" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="5" type="Lazer.Wall" />
+    <block x="4" y="6" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="9" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="9" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.07" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="4" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="5" type="Lazer.Wall" />
+    <block x="3" y="6" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="5" y="5" type="Lazer.Splitter" direction="Right" />
+    <block x="5" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="9" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="8" type="Lazer.Wall" />
+    <block x="7" y="9" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="9" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="9" y="7" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="1.08" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="5" y="3" type="Lazer.Splitter" direction="Left" />
+    <block x="5" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Wall" />
+    <block x="8" y="9" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.09" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="4" y="4" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="4" y="5" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Wall" />
+    <block x="5" y="8" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="8" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="7" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.10" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="8" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="5" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="6" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.11" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="6" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Wall" />
+    <block x="5" y="6" type="Lazer.Wall" />
+    <block x="5" y="8" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="5" type="Lazer.Mirror" angle="NWSE" />
+    <block x="6" y="7" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="6" y="8" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="6" type="Lazer.Wall" />
+    <block x="8" y="9" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="8" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.12" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="5" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="5" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="7" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Wall" />
+    <block x="6" y="5" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="5" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="8" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="9" y="8" type="Lazer.Splitter" direction="Left" />
+    <block x="9" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.13" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="Fuchsia" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="4" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="6" type="Lazer.Prism" direction="Up" />
+    <block x="6" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="7" y="6" type="Lazer.Mirror" angle="NESW" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.14" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Receiver" direction="Right" color="Red" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="8" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="6" type="Lazer.ColorBlock" color="Red" />
+    <block x="5" y="9" type="Lazer.Splitter" direction="Up" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="5" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="7" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="8" y="4" type="Lazer.Splitter" direction="Up" />
+    <block x="8" y="6" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Receiver" direction="Left" color="Red" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.15" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Receiver" direction="Right" color="Cyan" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Wall" />
+    <block x="2" y="4" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="3" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="3" y="8" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="5" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Wall" />
+    <block x="5" y="7" type="Lazer.Wall" />
+    <block x="5" y="8" type="Lazer.Wall" />
+    <block x="5" y="9" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Splitter" direction="Down" />
+    <block x="6" y="3" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="6" y="4" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="6" y="5" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="6" type="Lazer.Splitter" direction="Up" />
+    <block x="6" y="8" type="Lazer.Wall" />
+    <block x="6" y="9" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="8" type="Lazer.Wall" />
+    <block x="7" y="9" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="5" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="8" type="Lazer.Wall" />
+    <block x="8" y="9" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="9" y="6" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="8" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="2.16" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="Cyan" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="3" y="8" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="3" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Wall" />
+    <block x="5" y="6" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="5" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="8" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="8" y="3" type="Lazer.ColorBlock" color="Red" />
+    <block x="8" y="10" type="Lazer.Receiver" direction="Up" color="Red" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Receiver" direction="Left" color="Red" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.17" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Receiver" direction="Right" color="Red" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="5" y="5" type="Lazer.ColorBlock" color="Red" />
+    <block x="5" y="7" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="9" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="5" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="6" y="7" type="Lazer.Mirror" angle="NWSE" />
+    <block x="6" y="9" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="7" y="7" type="Lazer.Splitter" direction="Left" />
+    <block x="7" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Wall" />
+    <block x="9" y="6" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.18" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="4" y="5" type="Lazer.Splitter" direction="Right" />
+    <block x="4" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="7" y="3" type="Lazer.Splitter" direction="Left" />
+    <block x="7" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.19" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Receiver" direction="Right" color="Red" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="8" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="6" type="Lazer.ColorBlock" color="Red" />
+    <block x="6" y="9" type="Lazer.Mirror" angle="NESW" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="8" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="9" y="1" type="Lazer.Receiver" direction="Down" color="Red" />
+    <block x="9" y="6" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.20" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="8" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Splitter" direction="Down" />
+    <block x="4" y="6" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="5" y="4" type="Lazer.Prism" direction="Left" />
+    <block x="5" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="9" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Receiver" direction="Down" color="Fuchsia" />
+    <block x="8" y="4" type="Lazer.Splitter" direction="Left" />
+    <block x="8" y="10" type="Lazer.Receiver" direction="Up" color="Fuchsia" />
+    <block x="9" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="9" y="7" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="9" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.21" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="4" y="5" type="Lazer.Splitter" direction="Left" />
+    <block x="4" y="6" type="Lazer.Splitter" direction="Up" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="7" y="6" type="Lazer.Prism" direction="Left" />
+    <block x="7" y="8" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.22" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Receiver" direction="Right" color="Cyan" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Receiver" direction="Right" color="Cyan" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Receiver" direction="Down" color="Fuchsia" />
+    <block x="4" y="4" type="Lazer.Prism" direction="Down" />
+    <block x="4" y="8" type="Lazer.Mirror" angle="NWSE" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="9" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="9" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Receiver" direction="Down" color="Fuchsia" />
+    <block x="8" y="6" type="Lazer.Prism" direction="Down" />
+    <block x="8" y="8" type="Lazer.Mirror" angle="NESW" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.23" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="Fuchsia" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="6" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="5" type="Lazer.Prism" direction="Left" />
+    <block x="5" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="7" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="8" type="Lazer.Mirror" angle="NESW" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="5" type="Lazer.Wall" />
+    <block x="8" y="6" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="8" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="9" y="3" type="Lazer.Splitter" direction="Left" />
+    <block x="9" y="10" type="Lazer.Receiver" direction="Up" color="Cyan" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="3.24" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Receiver" direction="Right" color="Fuchsia" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="3" y="7" type="Lazer.Prism" direction="Right" />
+    <block x="3" y="10" type="Lazer.Receiver" direction="Up" color="Cyan" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="3" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="7" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="4" type="Lazer.Splitter" direction="Up" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="7" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="7" y="4" type="Lazer.Prism" direction="Left" />
+    <block x="7" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.25" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Receiver" direction="Right" color="Cyan" />
+    <block x="1" y="7" type="Lazer.Receiver" direction="Right" color="Red" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Wall" />
+    <block x="5" y="8" type="Lazer.Wall" />
+    <block x="5" y="9" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Wall" />
+    <block x="6" y="8" type="Lazer.Wall" />
+    <block x="6" y="9" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="5" type="Lazer.ColorBlock" color="Red" />
+    <block x="8" y="7" type="Lazer.Splitter" direction="Up" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="6" type="Lazer.Splitter" direction="Up" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="7" type="Lazer.Receiver" direction="Left" color="Red" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.26" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="5" type="Lazer.Wall" />
+    <block x="3" y="6" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="4" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="4" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="6" type="Lazer.Wall" />
+    <block x="5" y="7" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Splitter" direction="Down" />
+    <block x="6" y="8" type="Lazer.Mirror" angle="NESW" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="8" type="Lazer.Wall" />
+    <block x="8" y="9" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.27" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Receiver" direction="Right" color="Yellow" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="Fuchsia" />
+    <block x="1" y="9" type="Lazer.Receiver" direction="Right" color="Cyan" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="4" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="5" type="Lazer.Emitter" direction="Right" color="White" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="3" y="3" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="3" y="9" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="4" y="4" type="Lazer.ColorBlock" color="Fuchsia" />
+    <block x="4" y="8" type="Lazer.Mirror" angle="NESW" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="5" y="5" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="5" y="7" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="7" y="5" type="Lazer.Mirror" angle="NESW" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Receiver" direction="Down" color="Fuchsia" />
+    <block x="8" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="8" y="8" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="9" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.28" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="6" type="Lazer.Splitter" direction="Right" />
+    <block x="2" y="7" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="6" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="7" y="9" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="8" y="5" type="Lazer.Prism" direction="Left" />
+    <block x="8" y="8" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="7" type="Lazer.Prism" direction="Left" />
+    <block x="9" y="9" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="5" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="9" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.29" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="5" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="9" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="8" type="Lazer.Wall" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="5" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="9" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="5" y="6" type="Lazer.Splitter" direction="Up" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="3" type="Lazer.Splitter" direction="Down" />
+    <block x="6" y="6" type="Lazer.Mirror" angle="NESW" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Receiver" direction="Down" color="White" />
+    <block x="8" y="3" type="Lazer.Splitter" direction="Left" />
+    <block x="8" y="4" type="Lazer.Prism" direction="Up" />
+    <block x="8" y="10" type="Lazer.Receiver" direction="Up" color="Fuchsia" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Wall" />
+    <block x="9" y="6" type="Lazer.Wall" />
+    <block x="9" y="7" type="Lazer.Wall" />
+    <block x="9" y="8" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.30" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Receiver" direction="Right" color="Yellow" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="9" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="6" type="Lazer.Prism" direction="Down" />
+    <block x="3" y="7" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="5" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Wall" />
+    <block x="5" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="5" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="5" type="Lazer.Wall" />
+    <block x="6" y="6" type="Lazer.Wall" />
+    <block x="6" y="7" type="Lazer.Wall" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="7" y="9" type="Lazer.Splitter" direction="Left" />
+    <block x="7" y="10" type="Lazer.Receiver" direction="Up" color="Cyan" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="5" type="Lazer.Wall" />
+    <block x="8" y="6" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.31" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Wall" />
+    <block x="2" y="6" type="Lazer.Wall" />
+    <block x="2" y="7" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Receiver" direction="Down" color="Fuchsia" />
+    <block x="3" y="5" type="Lazer.Splitter" direction="Right" />
+    <block x="3" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="3" y="7" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="4" y="7" type="Lazer.Splitter" direction="Right" />
+    <block x="4" y="10" type="Lazer.Receiver" direction="Up" color="Cyan" />
+    <block x="5" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="5" y="5" type="Lazer.Prism" direction="Right" />
+    <block x="5" y="10" type="Lazer.Receiver" direction="Up" color="Cyan" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="7" type="Lazer.ColorBlock" color="Cyan" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Splitter" direction="Down" />
+    <block x="7" y="8" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="7" y="9" type="Lazer.Wall" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="7" type="Lazer.ColorBlock" color="Fuchsia" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="5" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="9" y="7" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="10" type="Lazer.Receiver" direction="Up" color="Fuchsia" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="4.32" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="8" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Wall" />
+    <block x="5" y="8" type="Lazer.Splitter" direction="Down" />
+    <block x="5" y="9" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Receiver" direction="Down" color="Cyan" />
+    <block x="6" y="3" type="Lazer.Prism" direction="Left" />
+    <block x="6" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="8" y="8" type="Lazer.Prism" direction="Left" />
+    <block x="8" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Receiver" direction="Left" color="Cyan" />
+    <block x="10" y="4" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Receiver" direction="Left" color="Fuchsia" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="Mirrors" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Receiver" direction="Right" color="White" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="7" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="8" type="Lazer.Wall" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="2" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Wall" />
+    <block x="3" y="6" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.Filter90" monodirection="False" direction="Left" />
+    <block x="3" y="9" type="Lazer.Mirror" angle="NWSE" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Mirror" angle="NESW" />
+    <block x="4" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="6" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Wall" />
+    <block x="4" y="8" type="Lazer.Wall" />
+    <block x="4" y="9" type="Lazer.FilterHV" mode="Direction" direction="Left" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Splitter" direction="Down" />
+    <block x="5" y="6" type="Lazer.Splitter" direction="Right" />
+    <block x="5" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Mirror" angle="NWSE" />
+    <block x="6" y="6" type="Lazer.Splitter" direction="Up" />
+    <block x="6" y="7" type="Lazer.Wall" />
+    <block x="6" y="8" type="Lazer.Wall" />
+    <block x="6" y="9" type="Lazer.FilterHV" mode="Direction" direction="Left" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Wall" />
+    <block x="7" y="7" type="Lazer.Wall" />
+    <block x="7" y="8" type="Lazer.Wall" />
+    <block x="7" y="9" type="Lazer.FilterHV" mode="Direction" direction="Left" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Mirror" angle="NESW" />
+    <block x="8" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="5" type="Lazer.Wall" />
+    <block x="8" y="6" type="Lazer.FilterHV" mode="Direction" direction="Right" />
+    <block x="8" y="7" type="Lazer.Wall" />
+    <block x="8" y="8" type="Lazer.Wall" />
+    <block x="8" y="9" type="Lazer.FilterHV" mode="Direction" direction="Left" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Emitter" direction="Left" color="White" />
+    <block x="9" y="3" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="9" type="Lazer.Filter90" monodirection="False" direction="Up" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Receiver" direction="Left" color="White" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="test" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="4" type="Lazer.Multiplier" direction="Up" />
+    <block x="3" y="7" type="Lazer.FilterHV" mode="Vertical" />
+    <block x="3" y="8" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="4" y="7" type="Lazer.Filter90" monodirection="False" direction="Right" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="6" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="Blue" />
+    <block x="6" y="3" type="Lazer.Adder" direction="Left" />
+    <block x="6" y="7" type="Lazer.Multiplier" direction="Down" />
+    <block x="6" y="8" type="Lazer.Emitter" direction="Up" color="Red" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="8" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="4" type="Lazer.Emitter" direction="Up" color="Lime" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="8" type="Lazer.Adder" direction="Left" />
+    <block x="9" y="9" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="test2" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="2" type="Lazer.Adder" direction="Left" />
+    <block x="2" y="5" type="Lazer.Multiplier" direction="Up" />
+    <block x="2" y="8" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="7" type="Lazer.FilterHV" mode="Vertical" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="4" y="5" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="4" y="7" type="Lazer.Filter90" monodirection="False" direction="Right" />
+    <block x="4" y="9" type="Lazer.Multiplier" direction="Down" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="5" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="5" type="Lazer.Mirror" angle="NWSE" />
+    <block x="5" y="8" type="Lazer.Emitter" direction="Down" color="Blue" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="5" type="Lazer.Emitter" direction="Up" color="Red" />
+    <block x="6" y="7" type="Lazer.Adder" direction="Left" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="5" type="Lazer.Emitter" direction="Up" color="Lime" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="8" y="5" type="Lazer.Mirror" angle="NESW" />
+    <block x="8" y="7" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="2" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="4" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="test3" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="7" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="3" y="5" type="Lazer.Emitter" direction="Down" color="Blue" />
+    <block x="3" y="7" type="Lazer.FilterHV" mode="Direction" direction="Up" />
+    <block x="3" y="9" type="Lazer.Emitter" direction="Up" color="Lime" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Mirror" angle="NWSE" />
+    <block x="4" y="7" type="Lazer.Filter90" monodirection="False" direction="Right" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="5" y="6" type="Lazer.Multiplier" direction="Down" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="4" type="Lazer.Adder" direction="Left" />
+    <block x="6" y="6" type="Lazer.Adder" direction="Left" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="7" y="7" type="Lazer.Multiplier" direction="Up" />
+    <block x="7" y="8" type="Lazer.Emitter" direction="Up" color="Red" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="8" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="9" y="5" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="8" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="test4" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="4" type="Lazer.Multiplier" direction="Up" />
+    <block x="3" y="7" type="Lazer.FilterHV" mode="Vertical" />
+    <block x="3" y="8" type="Lazer.Emitter" direction="Up" color="White" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="4" y="7" type="Lazer.Filter90" monodirection="False" direction="Right" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="6" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="Blue" />
+    <block x="6" y="3" type="Lazer.Adder" direction="Left" />
+    <block x="6" y="7" type="Lazer.Multiplier" direction="Down" />
+    <block x="6" y="8" type="Lazer.Emitter" direction="Up" color="Red" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="7" type="Lazer.Mirror" angle="NESW" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="4" type="Lazer.Emitter" direction="Up" color="Lime" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="8" type="Lazer.Adder" direction="Left" />
+    <block x="9" y="9" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="test5" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Wall" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="4" type="Lazer.Mirror" angle="NESW" />
+    <block x="2" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="4" type="Lazer.Multiplier" direction="Up" />
+    <block x="3" y="7" type="Lazer.FilterHV" mode="Vertical" />
+    <block x="3" y="9" type="Lazer.Emitter" direction="Up" color="Fuchsia" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="2" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="4" y="7" type="Lazer.Mirror" angle="NWSE" />
+    <block x="4" y="8" type="Lazer.Filter90" monodirection="False" direction="Right" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="5" type="Lazer.Splitter" direction="Down" />
+    <block x="5" y="6" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="5" y="9" type="Lazer.Mirror" angle="NWSE" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Wall" />
+    <block x="6" y="2" type="Lazer.Emitter" direction="Down" color="Blue" />
+    <block x="6" y="3" type="Lazer.Adder" direction="Left" />
+    <block x="6" y="7" type="Lazer.Multiplier" direction="Down" />
+    <block x="6" y="8" type="Lazer.Emitter" direction="Up" color="Red" />
+    <block x="6" y="10" type="Lazer.Wall" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Mirror" angle="NWSE" />
+    <block x="7" y="7" type="Lazer.Mirror" angle="NESW" />
+    <block x="7" y="10" type="Lazer.Wall" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="2" type="Lazer.Emitter" direction="Down" color="Lime" />
+    <block x="8" y="3" type="Lazer.Splitter" direction="Up" />
+    <block x="8" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="8" type="Lazer.ColorBlock" color="Blue" />
+    <block x="8" y="9" type="Lazer.Adder" direction="Left" />
+    <block x="8" y="10" type="Lazer.Wall" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Mirror" angle="NWSE" />
+    <block x="9" y="9" type="Lazer.Mirror" angle="NESW" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Wall" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+  <board name="8.06" width="10" height="10">
+    <block x="1" y="1" type="Lazer.Wall" />
+    <block x="1" y="2" type="Lazer.Wall" />
+    <block x="1" y="3" type="Lazer.Wall" />
+    <block x="1" y="4" type="Lazer.Wall" />
+    <block x="1" y="5" type="Lazer.Receiver" direction="Right" color="Yellow" />
+    <block x="1" y="6" type="Lazer.Wall" />
+    <block x="1" y="7" type="Lazer.Wall" />
+    <block x="1" y="8" type="Lazer.Wall" />
+    <block x="1" y="9" type="Lazer.Wall" />
+    <block x="1" y="10" type="Lazer.Wall" />
+    <block x="2" y="1" type="Lazer.Wall" />
+    <block x="2" y="8" type="Lazer.Mirror" angle="NWSE" />
+    <block x="2" y="10" type="Lazer.Wall" />
+    <block x="3" y="1" type="Lazer.Wall" />
+    <block x="3" y="3" type="Lazer.Wall" />
+    <block x="3" y="5" type="Lazer.Splitter" direction="Down" />
+    <block x="3" y="6" type="Lazer.Mirror" angle="NESW" />
+    <block x="3" y="9" type="Lazer.Wall" />
+    <block x="3" y="10" type="Lazer.Wall" />
+    <block x="4" y="1" type="Lazer.Wall" />
+    <block x="4" y="4" type="Lazer.Wall" />
+    <block x="4" y="7" type="Lazer.Splitter" direction="Right" />
+    <block x="4" y="8" type="Lazer.Splitter" direction="Up" />
+    <block x="4" y="10" type="Lazer.Wall" />
+    <block x="5" y="1" type="Lazer.Wall" />
+    <block x="5" y="2" type="Lazer.Wall" />
+    <block x="5" y="3" type="Lazer.Wall" />
+    <block x="5" y="4" type="Lazer.Wall" />
+    <block x="5" y="7" type="Lazer.Splitter" direction="Left" />
+    <block x="5" y="10" type="Lazer.Wall" />
+    <block x="6" y="1" type="Lazer.Receiver" direction="Down" color="Yellow" />
+    <block x="6" y="5" type="Lazer.Emitter" direction="Down" color="White" />
+    <block x="6" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="7" y="1" type="Lazer.Wall" />
+    <block x="7" y="2" type="Lazer.Wall" />
+    <block x="7" y="3" type="Lazer.Wall" />
+    <block x="7" y="4" type="Lazer.Splitter" direction="Left" />
+    <block x="7" y="5" type="Lazer.ColorBlock" color="Yellow" />
+    <block x="7" y="10" type="Lazer.Receiver" direction="Up" color="Yellow" />
+    <block x="8" y="1" type="Lazer.Wall" />
+    <block x="8" y="3" type="Lazer.Wall" />
+    <block x="8" y="4" type="Lazer.Wall" />
+    <block x="8" y="6" type="Lazer.Mirror" angle="NWSE" />
+    <block x="8" y="10" type="Lazer.Receiver" direction="Up" color="White" />
+    <block x="9" y="1" type="Lazer.Wall" />
+    <block x="9" y="3" type="Lazer.Wall" />
+    <block x="9" y="4" type="Lazer.Wall" />
+    <block x="9" y="8" type="Lazer.Wall" />
+    <block x="9" y="9" type="Lazer.Wall" />
+    <block x="9" y="10" type="Lazer.Wall" />
+    <block x="10" y="1" type="Lazer.Wall" />
+    <block x="10" y="2" type="Lazer.Wall" />
+    <block x="10" y="3" type="Lazer.Wall" />
+    <block x="10" y="4" type="Lazer.Wall" />
+    <block x="10" y="5" type="Lazer.Receiver" direction="Left" color="Yellow" />
+    <block x="10" y="6" type="Lazer.Wall" />
+    <block x="10" y="7" type="Lazer.Wall" />
+    <block x="10" y="8" type="Lazer.Wall" />
+    <block x="10" y="9" type="Lazer.Wall" />
+    <block x="10" y="10" type="Lazer.Wall" />
+  </board>
+</levels>

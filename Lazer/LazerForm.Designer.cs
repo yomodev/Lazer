@@ -60,12 +60,15 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 11);
+            this.tabControl1.Location = new System.Drawing.Point(16, 17);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(191, 480);
+            this.tabControl1.Size = new System.Drawing.Size(255, 495);
             this.tabControl1.TabIndex = 3;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -74,19 +77,22 @@
             this.tabPage1.Controls.Add(this.btnLoad);
             this.tabPage1.Controls.Add(this.btnSolve);
             this.tabPage1.Controls.Add(this.listBoxBoards);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(183, 454);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage1.Size = new System.Drawing.Size(247, 462);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Level";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(6, 425);
+            this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLoad.Location = new System.Drawing.Point(8, 417);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(82, 23);
+            this.btnLoad.Size = new System.Drawing.Size(109, 35);
             this.btnLoad.TabIndex = 6;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
@@ -94,9 +100,11 @@
             // 
             // btnSolve
             // 
-            this.btnSolve.Location = new System.Drawing.Point(95, 425);
+            this.btnSolve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSolve.Location = new System.Drawing.Point(130, 417);
+            this.btnSolve.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSolve.Name = "btnSolve";
-            this.btnSolve.Size = new System.Drawing.Size(82, 23);
+            this.btnSolve.Size = new System.Drawing.Size(109, 35);
             this.btnSolve.TabIndex = 5;
             this.btnSolve.Text = "Solve";
             this.toolTips.SetToolTip(this.btnSolve, "Right click a block to mark as fixed.");
@@ -105,10 +113,13 @@
             // 
             // listBoxBoards
             // 
+            this.listBoxBoards.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.listBoxBoards.FormattingEnabled = true;
-            this.listBoxBoards.Location = new System.Drawing.Point(6, 6);
+            this.listBoxBoards.ItemHeight = 20;
+            this.listBoxBoards.Location = new System.Drawing.Point(8, 9);
+            this.listBoxBoards.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxBoards.Name = "listBoxBoards";
-            this.listBoxBoards.Size = new System.Drawing.Size(171, 407);
+            this.listBoxBoards.Size = new System.Drawing.Size(227, 384);
             this.listBoxBoards.Sorted = true;
             this.listBoxBoards.TabIndex = 3;
             this.listBoxBoards.Click += new System.EventHandler(this.listBoxBoards_Click);
@@ -123,19 +134,21 @@
             this.tabPage2.Controls.Add(this.btnSave);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.textBoxLevel);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(183, 454);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage2.Size = new System.Drawing.Size(247, 505);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editor";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(124, 33);
+            this.btnClear.Location = new System.Drawing.Point(165, 51);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(53, 23);
+            this.btnClear.Size = new System.Drawing.Size(71, 35);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -145,9 +158,10 @@
             // 
             this.panel1.Controls.Add(this.radio_select);
             this.panel1.Controls.Add(this.radio_place);
-            this.panel1.Location = new System.Drawing.Point(9, 62);
+            this.panel1.Location = new System.Drawing.Point(12, 95);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 15);
+            this.panel1.Size = new System.Drawing.Size(227, 23);
             this.panel1.TabIndex = 5;
             // 
             // radio_select
@@ -155,8 +169,9 @@
             this.radio_select.AutoSize = true;
             this.radio_select.Checked = true;
             this.radio_select.Location = new System.Drawing.Point(0, 0);
+            this.radio_select.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radio_select.Name = "radio_select";
-            this.radio_select.Size = new System.Drawing.Size(93, 17);
+            this.radio_select.Size = new System.Drawing.Size(121, 24);
             this.radio_select.TabIndex = 9;
             this.radio_select.TabStop = true;
             this.radio_select.Text = "Select / Move";
@@ -166,9 +181,10 @@
             // radio_place
             // 
             this.radio_place.AutoSize = true;
-            this.radio_place.Location = new System.Drawing.Point(99, 0);
+            this.radio_place.Location = new System.Drawing.Point(132, 0);
+            this.radio_place.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radio_place.Name = "radio_place";
-            this.radio_place.Size = new System.Drawing.Size(52, 17);
+            this.radio_place.Size = new System.Drawing.Size(65, 24);
             this.radio_place.TabIndex = 10;
             this.radio_place.Text = "Place";
             this.radio_place.UseVisualStyleBackColor = true;
@@ -177,9 +193,10 @@
             // btnRemove
             // 
             this.btnRemove.Enabled = false;
-            this.btnRemove.Location = new System.Drawing.Point(62, 33);
+            this.btnRemove.Location = new System.Drawing.Point(83, 51);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(55, 23);
+            this.btnRemove.Size = new System.Drawing.Size(73, 35);
             this.btnRemove.TabIndex = 8;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -188,9 +205,11 @@
             // listBlockView
             // 
             this.listBlockView.Enabled = false;
-            this.listBlockView.Location = new System.Drawing.Point(7, 83);
+            this.listBlockView.HideSelection = false;
+            this.listBlockView.Location = new System.Drawing.Point(9, 128);
+            this.listBlockView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBlockView.Name = "listBlockView";
-            this.listBlockView.Size = new System.Drawing.Size(170, 148);
+            this.listBlockView.Size = new System.Drawing.Size(225, 158);
             this.listBlockView.SmallImageList = this.imageList1;
             this.listBlockView.TabIndex = 7;
             this.listBlockView.UseCompatibleStateImageBehavior = false;
@@ -204,17 +223,21 @@
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Location = new System.Drawing.Point(6, 237);
+            this.propertyGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.propertyGrid1.Location = new System.Drawing.Point(8, 296);
+            this.propertyGrid1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(171, 211);
+            this.propertyGrid1.Size = new System.Drawing.Size(228, 199);
             this.propertyGrid1.TabIndex = 6;
             this.propertyGrid1.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.propertyGrid1_PropertyValueChanged);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(7, 33);
+            this.btnSave.Location = new System.Drawing.Point(9, 51);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(49, 23);
+            this.btnSave.Size = new System.Drawing.Size(65, 35);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -223,17 +246,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Location = new System.Drawing.Point(8, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(43, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Level";
             // 
             // textBoxLevel
             // 
-            this.textBoxLevel.Location = new System.Drawing.Point(45, 6);
+            this.textBoxLevel.Location = new System.Drawing.Point(60, 9);
+            this.textBoxLevel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxLevel.Name = "textBoxLevel";
-            this.textBoxLevel.Size = new System.Drawing.Size(132, 20);
+            this.textBoxLevel.Size = new System.Drawing.Size(175, 27);
             this.textBoxLevel.TabIndex = 0;
             // 
             // fileSystemWatcher
@@ -247,23 +272,26 @@
             // 
             // controlBoard
             // 
+            this.controlBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.controlBoard.isEditing = false;
-            this.controlBoard.Location = new System.Drawing.Point(209, 12);
+            this.controlBoard.Location = new System.Drawing.Point(279, 18);
+            this.controlBoard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.controlBoard.Name = "controlBoard";
             this.controlBoard.overPoint = new System.Drawing.Point(0, 0);
-            this.controlBoard.Size = new System.Drawing.Size(480, 480);
+            this.controlBoard.Size = new System.Drawing.Size(494, 494);
             this.controlBoard.TabIndex = 4;
             this.controlBoard.TabStop = false;
             // 
             // LazerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 503);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(790, 523);
             this.Controls.Add(this.controlBoard);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "LazerForm";
             this.Text = "Lazer";

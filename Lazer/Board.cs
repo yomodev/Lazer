@@ -93,8 +93,8 @@ namespace Lazer
                 if (b != null && b is Wall == false)
                 {
                     Ray ray = new Ray();
-                    ray[Ray.opposite(e.Direction)] = Color.White;
-                    if (b.process(ray).none)
+                    ray[Ray.Opposite(e.Direction)] = Color.White;
+                    if (b.Process(ray).None)
                     {
                         return false;
                     }
@@ -108,7 +108,7 @@ namespace Lazer
                 b = firstInDirection(r.Direction, (Point)kv.Value);
                 if (b != null && (b is Emitter || b is Mirror || b is Splitter))
                 {
-                    if (b.process(new Ray(r.Color))[Ray.opposite(r.Direction)] != r.Color)
+                    if (b.Process(new Ray(r.Color))[Ray.Opposite(r.Direction)] != r.Color)
                     {
                         return false;
                     }
@@ -122,7 +122,7 @@ namespace Lazer
                 b = firstInDirection(s.Direction, (Point)kv.Value);
                 if (b != null && b is Wall == false)
                 {
-                    if (b.process(new Ray(Color.White))[Ray.opposite(s.Direction)] == Color.Transparent)
+                    if (b.Process(new Ray(Color.White))[Ray.Opposite(s.Direction)] == Color.Transparent)
                     {
                         return false;
                     }
@@ -331,7 +331,7 @@ namespace Lazer
                     {
                         receivers.Add(b as Receiver);
                         // reset lighting
-                        (b as Receiver).reset();
+                        (b as Receiver).Reset();
                         //b.process(new Ray());
                     }
                     else
@@ -378,14 +378,14 @@ namespace Lazer
                 }
 
                 // send rays to element in this coords
-                outRay = b.process(inRay);
+                outRay = b.Process(inRay);
                 Debug.WriteLine("out: " + outRay);
 
                 // if the element produced output rays (non transparent)
                 // update output ray table
                 // add next point to stack
                 // remember to not process the same item 2 times given the same input ray
-                if (outRay.hasUp)
+                if (outRay.HasUp)
                 {
                     n = new Point(p.X, p.Y - 1);
                     if (area.Contains(n))
@@ -395,7 +395,7 @@ namespace Lazer
                     }
                 }
 
-                if (outRay.hasDown)
+                if (outRay.HasDown)
                 {
                     n = new Point(p.X, p.Y + 1);
                     if (area.Contains(n))
@@ -405,7 +405,7 @@ namespace Lazer
                     }
                 }
 
-                if (outRay.hasLeft)
+                if (outRay.HasLeft)
                 {
                     n = new Point(p.X - 1, p.Y);
                     if (area.Contains(n))
@@ -415,7 +415,7 @@ namespace Lazer
                     }
                 }
 
-                if (outRay.hasRight)
+                if (outRay.HasRight)
                 {
                     n = new Point(p.X + 1, p.Y);
                     if (area.Contains(n))
@@ -431,7 +431,7 @@ namespace Lazer
             // clean board
             if (prepareDraw && toProcessForDraw.Count > 0)
             {
-                toProcessForDraw.ForEach(item => item.process(new Ray()));
+                toProcessForDraw.ForEach(item => item.Process(new Ray()));
             }
 
             // solved?
@@ -480,7 +480,7 @@ namespace Lazer
                     {
                         receivers.Add(b as Receiver);
                         // reset lighting
-                        (b as Receiver).reset();
+                        (b as Receiver).Reset();
                         //b.process(new Ray());
                     }
                     else
@@ -517,14 +517,14 @@ namespace Lazer
                 Debug.WriteLine("in: " + inRay);
 
                 // send rays to element in this coords
-                outRay = b.process(inRay);
+                outRay = b.Process(inRay);
                 Debug.WriteLine("out: " + outRay);
 
                 // if the element produced output rays (non transparent)
                 // update output ray table
                 // add next point to stack
                 // remember to not process the same item 2 times given the same input ray
-                if (outRay.hasUp)
+                if (outRay.HasUp)
                 {
                     n = new Point(p.X, p.Y - 1);
                     if (area.Contains(n))
@@ -539,7 +539,7 @@ namespace Lazer
                     }
                 }
 
-                if (outRay.hasDown)
+                if (outRay.HasDown)
                 {
                     n = new Point(p.X, p.Y + 1);
                     if (area.Contains(n))
@@ -554,7 +554,7 @@ namespace Lazer
                     }
                 }
 
-                if (outRay.hasLeft)
+                if (outRay.HasLeft)
                 {
                     n = new Point(p.X - 1, p.Y);
                     if (area.Contains(n))
@@ -569,7 +569,7 @@ namespace Lazer
                     }
                 }
 
-                if (outRay.hasRight)
+                if (outRay.HasRight)
                 {
                     n = new Point(p.X + 1, p.Y);
                     if (area.Contains(n))
@@ -590,7 +590,7 @@ namespace Lazer
             // clean board
             if (prepareDraw && toProcessForDraw.Count > 0)
             {
-                toProcessForDraw.ForEach(item => item.process(new Ray()));
+                toProcessForDraw.ForEach(item => item.Process(new Ray()));
             }
 
             // solved?
@@ -652,7 +652,7 @@ namespace Lazer
                     b = _board[x, y];
                     rect = new Rectangle(x*squareSize, y*squareSize, squareSize, squareSize);
 
-                    b.draw(g, rect, showLaser);
+                    b.Draw(g, rect, showLaser);
                     
                     #if DEBUG
                         g.DrawString(x + "," + y, f, Brushes.White, x * squareSize, y * squareSize);
@@ -850,7 +850,7 @@ namespace Lazer
                     xblock.SetAttribute("x", x.ToString());
                     xblock.SetAttribute("y", y.ToString());
 
-                    XmlNode xnode = b.serialize(xdocument, xblock);
+                    XmlNode xnode = b.Serialize(xdocument, xblock);
                     if (xnode != null)
                     {
                         xboard.AppendChild(xnode);

@@ -11,19 +11,16 @@ namespace Lazer
         private bool _monodirection = true;
         private Direction _direction = Direction.Left;
 
-
         public Filter90() :base()
         {
             isMovable = false;
         }
-
 
         public Filter90(Direction dir, bool monodirection) : this()
         {
             Direction = dir;
             Monodirection = monodirection;
         }
-
 
         public bool Monodirection
         {
@@ -38,7 +35,6 @@ namespace Lazer
             }
         }
 
-
         public Direction Direction
         {
             get { return _direction; }
@@ -51,11 +47,9 @@ namespace Lazer
                 }
             }
         }
-
-
         
         // return flipped input ie to propagate the ray
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             Direction d = Direction;
             switch (Direction)
@@ -87,9 +81,7 @@ namespace Lazer
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
@@ -107,7 +99,7 @@ namespace Lazer
                 brushes[1] = Monodirection ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Filter90Arrows, angle),Color.PowderBlue)) : null;
 
                 c = output[Direction] == Color.Transparent ? c : output[Direction];
-                laser = output.none ? null : laser = new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray90, angle), c ));
+                laser = output.None ? null : laser = new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray90, angle), c ));
                 
                 needRefresh = false;
             }
@@ -125,7 +117,6 @@ namespace Lazer
                 if (laser != null) g.FillRectangle(laser, rect);
             }
         }
-
 
         public override string ToString()
         {
@@ -155,9 +146,7 @@ namespace Lazer
             return s + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("monodirection", Monodirection.ToString());
@@ -165,8 +154,7 @@ namespace Lazer
             return parent;
         }
 
-
-        public static Filter90 deserialize(XmlElement node)
+        public static Filter90 Deserialize(XmlElement node)
         {
             Filter90 obj = new Filter90();
             if (node.HasAttribute("monodirection"))
@@ -182,8 +170,7 @@ namespace Lazer
             return obj;
         }
 
-
-        public void rotate()
+        public void Rotate()
         {
             Direction = (Direction)(Enum.GetValues(Direction.GetType()).Length == (int)Direction + 1 ? 0 : (int)Direction + 1);
         }

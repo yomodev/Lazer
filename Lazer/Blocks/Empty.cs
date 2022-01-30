@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Xml;
 
 namespace Lazer
@@ -8,17 +7,14 @@ namespace Lazer
     {
         private TextureBrush laserH;
         private TextureBrush laserV;
-        
-
 
         public Empty()
         {
             isMovable = true;
         }
 
-
         // return flipped input ie to propagate the ray
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             output = new Ray(input.down, input.up, input.right, input.left);
             needRefresh = true;
@@ -26,17 +22,15 @@ namespace Lazer
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
-                laserH = output.hasLeft || output.hasRight ?
-                        new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray), output.hasLeft ? output.left : output.right)) : null;
-                laserV = output.hasUp || output.hasDown ?
-                    new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray, 90), output.hasUp ? output.up : output.down)) : null;
-                
+                laserH = output.HasLeft || output.HasRight ?
+                        new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray), output.HasLeft ? output.left : output.right)) : null;
+                laserV = output.HasUp || output.HasDown ?
+                    new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray, 90), output.HasUp ? output.up : output.down)) : null;
+
                 needRefresh = false;
             }
 
@@ -47,7 +41,6 @@ namespace Lazer
             }
         }
 
-
         /*
         public override int CompareTo(IBlock obj)
         {
@@ -56,14 +49,12 @@ namespace Lazer
         }
         */
 
-
         public override string ToString()
         {
             return "Empty";
         }
 
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             /*
             parent.SetAttribute("type", "empty");
@@ -71,8 +62,7 @@ namespace Lazer
             return null;
         }
 
-
-        public static Empty deserialize(XmlElement node)
+        public static Empty Deserialize(XmlElement node)
         {
             Empty obj = new Empty();
             return obj;

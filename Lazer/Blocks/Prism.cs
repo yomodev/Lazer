@@ -8,9 +8,7 @@ namespace Lazer
     {
         protected Direction _direction = Direction.Left;
         protected TextureBrush[] brushes = new TextureBrush[6];
-        protected Color[] _color = new Color[4] { Color.White, Color.Yellow, Color.Fuchsia, Color.Cyan};
-
-
+        protected Color[] _color = new Color[4] { Color.White, Color.Yellow, Color.Fuchsia, Color.Cyan };
 
         public Direction Direction
         {
@@ -24,24 +22,19 @@ namespace Lazer
                 }
             }
         }
-        
-
 
         public Prism() : base()
-        { 
+        {
             isMovable = true;
         }
-
-
 
         public Prism(Direction dir) : this()
         {
             Direction = dir;
         }
 
-
         // for now, if hit by a white ray return yellow, red and cyan rays
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             output = new Ray();
             if (_direction == Direction.Up && input.up == _color[0])
@@ -68,17 +61,15 @@ namespace Lazer
                 output.left = _color[2];
                 output.down = _color[3];
             }
-            
+
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
-                brushes[0] = new TextureBrush(Texture.colorize(Texture.extract(TextureType.TetraBase),Color.White));
+                brushes[0] = new TextureBrush(Texture.colorize(Texture.extract(TextureType.TetraBase), Color.White));
                 int rotation = 0;
                 switch (_direction)
                 {
@@ -106,8 +97,6 @@ namespace Lazer
             }
         }
 
-
-
         /*
         public override int CompareTo(IBlock obj)
         {
@@ -117,8 +106,6 @@ namespace Lazer
             }
             return obj == null ? 1 : -1;
         }*/
-
-
 
         public override string ToString()
         {
@@ -133,17 +120,14 @@ namespace Lazer
             return s + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("direction", Direction.ToString());
             return parent;
         }
 
-
-        public static Prism deserialize(XmlElement node)
+        public static Prism Deserialize(XmlElement node)
         {
             Prism obj = new Prism();
 
@@ -155,11 +139,9 @@ namespace Lazer
             return obj;
         }
 
-
-        public void rotate()
+        public void Rotate()
         {
             Direction = (Direction)(Enum.GetValues(Direction.GetType()).Length == (int)Direction + 1 ? 0 : (int)Direction + 1);
         }
     }
-
 }

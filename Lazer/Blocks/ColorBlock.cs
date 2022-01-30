@@ -9,7 +9,6 @@ namespace Lazer
         private Color _color = Color.Yellow;
         private TextureBrush brush;
 
-
         public Color Color
         {
             get { return _color; }
@@ -23,32 +22,27 @@ namespace Lazer
             }
         }
 
-
         public ColorBlock() :base()
         { 
             isMovable = true;
         }
-
 
         public ColorBlock(Color c) : this()
         {
             Color = c;
         }
 
-
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             return new Ray(
-                input.hasDown ? _color : Color.Transparent,
-                input.hasUp ? _color : Color.Transparent,
-                input.hasRight ? _color : Color.Transparent,
-                input.hasLeft ? _color : Color.Transparent
+                input.HasDown ? _color : Color.Transparent,
+                input.HasUp ? _color : Color.Transparent,
+                input.HasRight ? _color : Color.Transparent,
+                input.HasLeft ? _color : Color.Transparent
                 );
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
@@ -61,7 +55,6 @@ namespace Lazer
             g.FillRectangle(brush, rect);
         }
 
-
         /*
         public override int CompareTo(IBlock obj)
         {
@@ -72,24 +65,19 @@ namespace Lazer
             return obj == null ? 1 : -1;
         }*/
 
-
-
         public override string ToString()
         {
             return "ColorBlock(" + _color + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("color", ColorTranslator.ToHtml(Color));
             return parent;
         }
 
-
-        public static ColorBlock deserialize(XmlElement node)
+        public static ColorBlock Deserialize(XmlElement node)
         {
             ColorBlock obj = new ColorBlock();
 

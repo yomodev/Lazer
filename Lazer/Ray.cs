@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+﻿using System.Drawing;
 
 namespace Lazer
 {
     class Ray
     {
-
-
         public Color up, down, left, right;
 
         public Ray(Color up, Color down, Color left, Color right)
@@ -19,7 +14,6 @@ namespace Lazer
             this.right = right;
         }
 
-
         public Ray()
         {
             up = Color.Transparent;
@@ -27,8 +21,6 @@ namespace Lazer
             left = Color.Transparent;
             right = Color.Transparent;
         }
-
-
 
         public Ray(Color c)
         {
@@ -38,7 +30,6 @@ namespace Lazer
             right = c;
         }
 
-
         public Ray(Ray r)
         {
             up = r.up;
@@ -47,8 +38,7 @@ namespace Lazer
             right = r.right;
         }
 
-
-        public static Direction opposite(Direction dir)
+        public static Direction Opposite(Direction dir)
         {
             switch (dir)
             {
@@ -59,18 +49,16 @@ namespace Lazer
             }
         }
 
-
         public override string ToString()
         {
             return "up: " + up.ToString() + ", down: " + down.ToString() + ", left: " + left.ToString() + ", right: " + right.ToString();
         }
 
-
-        public bool hasUp { get { return up != Color.Transparent; } }
-        public bool hasDown { get { return down != Color.Transparent; } }
-        public bool hasLeft { get { return left != Color.Transparent; } }
-        public bool hasRight { get { return right != Color.Transparent; } }
-        public bool any
+        public bool HasUp { get { return up != Color.Transparent; } }
+        public bool HasDown { get { return down != Color.Transparent; } }
+        public bool HasLeft { get { return left != Color.Transparent; } }
+        public bool HasRight { get { return right != Color.Transparent; } }
+        public bool Any
         {
             get
             {
@@ -85,7 +73,7 @@ namespace Lazer
             }
         }
 
-        public bool none
+        public bool None
         {
             get
             {
@@ -99,7 +87,6 @@ namespace Lazer
                     right == Color.Transparent;
             }
         }
-
 
         public Color this[Direction dir]
         {
@@ -126,16 +113,10 @@ namespace Lazer
             }
         }
 
-
-
         public Color Coalesce(Direction d, Color c)
         {
             Color p = this[d];
             return p == Color.Transparent ? c : p;
         }
-
-
-
-
     }
 }

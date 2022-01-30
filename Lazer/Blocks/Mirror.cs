@@ -10,8 +10,6 @@ namespace Lazer
         private TextureBrush brush;
         private TextureBrush laser1;
         private TextureBrush laser2;
-        
-
 
         public Angle Angle
         {
@@ -26,14 +24,10 @@ namespace Lazer
             }
         }
 
-
-
         public Mirror() : base()
         { 
             isMovable = true;
         }
-
-
         
         // define mirror reflection angle: can be NESW=/ or NWSE=\
         public Mirror(Angle a) :this()
@@ -41,47 +35,44 @@ namespace Lazer
             Angle = a;
         }
 
-
         // return deflected input given mirror angle
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             output = new Ray();
             
             if (_angle == Angle.NESW)
             {
-                output.up = input.hasLeft ? input.left : output.up;
-                output.left = input.hasUp ? input.up : output.left;
-                output.right = input.hasDown ? input.down : output.right;
-                output.down = input.hasRight ? input.right : output.down;
+                output.up = input.HasLeft ? input.left : output.up;
+                output.left = input.HasUp ? input.up : output.left;
+                output.right = input.HasDown ? input.down : output.right;
+                output.down = input.HasRight ? input.right : output.down;
             }
             else 
             {
-                output.up = input.hasRight ? input.right : output.up;
-                output.left = input.hasDown ? input.down : output.left;
-                output.right = input.hasUp ? input.up : output.right;
-                output.down = input.hasLeft ? input.left : output.down;
+                output.up = input.HasRight ? input.right : output.up;
+                output.left = input.HasDown ? input.down : output.left;
+                output.right = input.HasUp ? input.up : output.right;
+                output.down = input.HasLeft ? input.left : output.down;
             }
 
             needRefresh = true;
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
                 brush = new TextureBrush(Texture.extract(TextureType.Mirror, _angle == Angle.NESW ? 0 : 90));
                 if (_angle == Angle.NESW)
                 {
-                    laser1 = output.hasLeft || output.hasUp ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 90), output.hasLeft ? output.left : output.up)) : null;
-                    laser2 = output.hasRight || output.hasDown ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 270), output.hasRight ? output.right : output.down)) : null;
+                    laser1 = output.HasLeft || output.HasUp ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 90), output.HasLeft ? output.left : output.up)) : null;
+                    laser2 = output.HasRight || output.HasDown ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 270), output.HasRight ? output.right : output.down)) : null;
                 }
                 else
                 {
-                    laser1 = output.hasRight || output.hasUp ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 180), output.hasRight ? output.right : output.up)) : null;
-                    laser2 = output.hasLeft || output.hasDown ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 0), output.hasLeft ? output.left : output.down)) : null;
+                    laser1 = output.HasRight || output.HasUp ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 180), output.HasRight ? output.right : output.up)) : null;
+                    laser2 = output.HasLeft || output.HasDown ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray45, 0), output.HasLeft ? output.left : output.down)) : null;
                 }
                 needRefresh = false;
             }
@@ -95,7 +86,6 @@ namespace Lazer
             }
         }
 
-
         /*
         public override int CompareTo(IBlock obj)
         {
@@ -106,24 +96,19 @@ namespace Lazer
             return obj == null ? 1 : -1;
         }*/
 
-
-
         public override string ToString()
         {
             return _angle == Angle.NESW ? "Mirror(/)" : "Mirror(\\)";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("angle", Angle.ToString());
             return parent;
         }
 
-
-        public static Mirror deserialize(XmlElement node)
+        public static Mirror Deserialize(XmlElement node)
         {
             Mirror obj = new Mirror();
             if(node.HasAttribute("angle"))
@@ -133,8 +118,7 @@ namespace Lazer
             return obj;
         }
 
-
-        public void rotate()
+        public void Rotate()
         {
             Angle = (Angle)(Enum.GetValues(Angle.GetType()).Length == (int)Angle + 1 ? 0 : (int)Angle + 1);
         }

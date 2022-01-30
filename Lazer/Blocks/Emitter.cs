@@ -9,8 +9,6 @@ namespace Lazer
         private Direction _direction = Direction.Right;
         private Color _color = Color.White;
         protected TextureBrush[] brushes = new TextureBrush[3];
-        
-
 
         public Direction Direction
         {
@@ -18,21 +16,19 @@ namespace Lazer
             set
             {
                 if (_direction != value)
-                { 
-                    _direction = value; 
+                {
+                    _direction = value;
                     needRefresh = true;
                 }
             }
         }
 
-        
-
         public Color Color
         {
             get { return _color; }
-            set 
-            { 
-                if( _color != value)
+            set
+            {
+                if (_color != value)
                 {
                     _color = value;
                     needRefresh = true;
@@ -40,26 +36,20 @@ namespace Lazer
             }
         }
 
-        
-
         public Emitter() : base()
-        { 
+        {
             isMovable = true;
         }
 
-
-
         // emitter just return an array of color c @ specified direction
-        public Emitter(Direction dir, Color c) :this()
+        public Emitter(Direction dir, Color c) : this()
         {
             Direction = dir;
             Color = c;
         }
 
-
-
         // emitter just return an array of color c @ specified direction
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             return new Ray(
                 _direction == Direction.Up ? _color : Color.Transparent,
@@ -68,11 +58,9 @@ namespace Lazer
                 _direction == Direction.Right ? _color : Color.Transparent);
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
-        { 
-            if( needRefresh)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
+        {
+            if (needRefresh)
             {
                 int angle = 0;
                 switch (_direction)
@@ -85,8 +73,8 @@ namespace Lazer
 
                 brushes[0] = new TextureBrush(Texture.extract(TextureType.SpotBody, angle));
                 brushes[1] = new TextureBrush(Texture.colorize(Texture.extract(TextureType.SpotLight, angle), _color));
-                brushes[2] = showLaser ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.RayHalfGradient, 180+angle), _color)) : null;
-                
+                brushes[2] = showLaser ? new TextureBrush(Texture.colorize(Texture.extract(TextureType.RayHalfGradient, 180 + angle), _color)) : null;
+
                 needRefresh = false;
             }
 
@@ -98,7 +86,6 @@ namespace Lazer
                 }
             }
         }
-
 
         /*
         public override int CompareTo(IBlock obj)
@@ -114,8 +101,6 @@ namespace Lazer
             return obj == null ? 1 : -1;
         }*/
 
-
-
         public override string ToString()
         {
             string s = "Emitter(";
@@ -129,9 +114,7 @@ namespace Lazer
 
             return s + ", " + _color + ")";
         }
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("direction", Direction.ToString());
@@ -139,9 +122,7 @@ namespace Lazer
             return parent;
         }
 
-
-
-        public static Emitter deserialize(XmlElement node)
+        public static Emitter Deserialize(XmlElement node)
         {
             Emitter obj = new Emitter();
 
@@ -158,8 +139,7 @@ namespace Lazer
             return obj;
         }
 
-
-        public void rotate()
+        public void Rotate()
         {
             Direction = (Direction)(Enum.GetValues(Direction.GetType()).Length == (int)Direction + 1 ? 0 : (int)Direction + 1);
         }

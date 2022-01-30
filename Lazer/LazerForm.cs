@@ -1,46 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Windows.Forms;
-using System.Drawing.Imaging;
 using System.IO;
-using System.Reflection;
-using System.Diagnostics;
+using System.Windows.Forms;
 using System.Xml;
-//using LuaSpace;
 
 namespace Lazer
 {
     public partial class LazerForm : Form
     {
-        //LuaSharp l;
-        string customBoards = "customBoards.xml";
-        string gameBoards = "gameBoards.xml";
+        readonly string customBoards = "customBoards.xml";
         private Point prevSelectedPoint = Point.Empty;
-        Dictionary<string,XmlElement> dictBoard = new Dictionary<string,XmlElement>();
-            
+        Dictionary<string, XmlElement> dictBoard = new Dictionary<string, XmlElement>();
 
         public LazerForm()
         {
             InitializeComponent();
 
-            controlBoard.OnCheck += controlBoard_OnCheck;
-            controlBoard.OnSelectionChange += controlBoard_OnSelectionChange;
+            controlBoard.OnCheck += ControlBoard_OnCheck;
+            controlBoard.OnSelectionChange += ControlBoard_OnSelectionChange;
 
             // init listview
             FillListBlockView();
 
             // load levels
-            loadLevels();
+            LoadLevels();
 
             // load first/last
 
             //ListViewItem lvi = new ListViewItem("test1");
             //lvi.ImageList = new ImageList(
             //lv.Items.Add(lvi);
-            
+
             /*
             l = new LuaSharp();
             l.push(board, "board");
@@ -52,7 +43,6 @@ namespace Lazer
             Debug.WriteLine(s.ToString());
             */
 
-
             //controlBoard.Test();
             if (listBoxBoards.Items.Count > 0)
             {
@@ -62,53 +52,45 @@ namespace Lazer
             }
         }
 
-
-
-        void controlBoard_OnSelectionChange(object sender, Point selectedPoint)
+        void ControlBoard_OnSelectionChange(object sender, Point selectedPoint)
         {
-            if (controlBoard.isEditing)
+            if (controlBoard.IsEditing)
             {
-                Block b = null;
                 if (radio_place.Checked)
                 {
                     string typeName = listBlockView.SelectedItems[0].Name;
                     Type type = Type.GetType(typeName);
-                    type = type == null ? Type.GetType("Lazer." + char.ToUpper(typeName[0]) + typeName.Substring(1)) : type;
+                    type = type ?? Type.GetType("Lazer." + char.ToUpper(typeName[0]) + typeName.Substring(1));
                     if (type == null)
                     {
                         throw new Exception("invalid type " + typeName);
                     }
 
-                    b = (Block)Activator.CreateInstance(type);
-                    
+                    Block b = (Block)Activator.CreateInstance(type);
+
                     if (b != null)
                     {
                         if (b.GetType() == controlBoard[selectedPoint].GetType() && b is IRotable)
                         {
-                            (controlBoard[selectedPoint] as IRotable).rotate();
+                            (controlBoard[selectedPoint] as IRotable).Rotate();
                         }
                         else
                         {
-                            controlBoard.setBlock(selectedPoint, b);
+                            controlBoard.SetBlock(selectedPoint, b);
                         }
                     }
                 }
-                else if (prevSelectedPoint == selectedPoint && controlBoard[selectedPoint]is IRotable)
+                else if (prevSelectedPoint == selectedPoint && controlBoard[selectedPoint] is IRotable)
                 {
-                    (controlBoard[selectedPoint] as IRotable).rotate();
+                    (controlBoard[selectedPoint] as IRotable).Rotate();
                 }
-                
+
                 //controlBoard.Redraw(false);
                 controlBoard.Test();
                 prevSelectedPoint = selectedPoint;
-                propertyGrid1.SelectedObject = controlBoard.selectedBlock;
+                propertyGrid1.SelectedObject = controlBoard.SelectedBlock;
             }
-
-            
         }
-
-
-
         private void FillListBlockView()
         {
             /*listBlockView.Items.Add("none", "Select - Move", "none");
@@ -157,18 +139,15 @@ namespace Lazer
             listBlockView.Items.Add("Lazer.Multiplier", "Multiplier", "multi");
 
             listBlockView.Items[0].Selected = true;
-
         }
 
-
-
-        void controlBoard_OnCheck(object sender, bool win)
+        void ControlBoard_OnCheck(object sender, bool win)
         {
-            if (win && !controlBoard.isEditing)
-            { 
-                if(listBoxBoards.SelectedIndex+1 < listBoxBoards.Items.Count)
+            if (win && !controlBoard.IsEditing)
+            {
+                if (listBoxBoards.SelectedIndex + 1 < listBoxBoards.Items.Count)
                 {
-                    if(MessageBox.Show("You Win!!!\nProceed with next level?","Congratulations", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("You Win!!!\nProceed with next level?", "Congratulations", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         //listBoxBoards.
                         //MessageBox.Show("puoi selezionarti il prossimo livello senza il mio aiuto...");
@@ -178,33 +157,30 @@ namespace Lazer
                     }
                 }
             }
-            
             this.Text = win ? "You win" : "Lazer - by Yomo";
         }
 
-
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            controlBoard.isEditing = tabControl1.SelectedIndex == 1;
+            controlBoard.IsEditing = tabControl1.SelectedIndex == 1;
             //Debug.WriteLine("editing = " + editing);
         }
 
 
-        private void btnSolve_Click(object sender, EventArgs e)
+        private void BtnSolve_Click(object sender, EventArgs e)
         {
-            SolverDialog pd = new SolverDialog();
+            SolverDialog pd = new();
             pd.solve(controlBoard, this);
             //controlBoard.solve();
         }
 
-        
-        private void propertyGrid1_PropertyValueChanged(object s, PropertyValueChangedEventArgs e)
+        private void PropertyGrid1_PropertyValueChanged(object s, PropertyValueChangedEventArgs e)
         {
             //controlBoard.Redraw(false);
             controlBoard.Test();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void BtnSave_Click(object sender, EventArgs e)
         {
             if (textBoxLevel.Text.Length == 0)
             {
@@ -215,20 +191,20 @@ namespace Lazer
             Board b = controlBoard.board;
             b.name = textBoxLevel.Text;
 
-            XmlDocument xdoc = new XmlDocument();
+            XmlDocument xdoc = new();
             XmlNode levels;
             if (File.Exists(customBoards))
             {
                 xdoc.Load(customBoards);
                 levels = xdoc.FirstChild;
             }
-            else 
+            else
             {
                 levels = xdoc.CreateElement("levels");
                 xdoc.AppendChild(levels);
-                
+
             }
-            
+
             // if level with same name already exists...
             XmlNodeList nlist = xdoc.SelectNodes("/levels/board[@name='" + b.name + "']");
             if (nlist.Count > 0)
@@ -242,17 +218,16 @@ namespace Lazer
                 levels.ReplaceChild(b.serialize(xdoc), nlist[0]);
             }
             else
-            { 
+            {
                 levels.AppendChild(b.serialize(xdoc));
             }
 
             xdoc.Save(customBoards);
 
-            loadLevels();
+            LoadLevels();
         }
 
-
-        private void btnRemove_Click(object sender, EventArgs e)
+        private void BtnRemove_Click(object sender, EventArgs e)
         {
             if (textBoxLevel.Text.Length == 0)
             {
@@ -260,7 +235,7 @@ namespace Lazer
                 return;
             }
 
-            if (MessageBox.Show("Remove level?\n" + textBoxLevel.Text, "Question", 
+            if (MessageBox.Show("Remove level?\n" + textBoxLevel.Text, "Question",
                 MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 return;
@@ -269,17 +244,15 @@ namespace Lazer
             MessageBox.Show("TODO!");
         }
 
-
-        private void fileSystemWatcher_Changed(object sender, FileSystemEventArgs e)
+        private void FileSystemWatcher_Changed(object sender, FileSystemEventArgs e)
         {
             //reloadBoards();
         }
 
-
-        private void loadLevels()
+        private void LoadLevels()
         {
             dictBoard.Clear();
-            XmlDocument xdoc = new XmlDocument();
+            XmlDocument xdoc = new();
             /*
             if (File.Exists(gameBoards))
             {
@@ -297,16 +270,15 @@ namespace Lazer
             if (File.Exists(customBoards))
             {
                 //customBoards
-                xdoc.Load(customBoards); 
-                fillListBoxLevels(xdoc);
+                xdoc.Load(customBoards);
+                FillListBoxLevels(xdoc);
             }
 
             // update listbox levels
-            updateListBoxBoards();
+            UpdateListBoxBoards();
         }
 
-
-        private void updateListBoxBoards()
+        private void UpdateListBoxBoards()
         {
             listBoxBoards.Items.Clear();
             foreach (var item in dictBoard.Keys)
@@ -315,23 +287,20 @@ namespace Lazer
             }
         }
 
-
-        private void fillListBoxLevels(XmlDocument xdoc)
+        private void FillListBoxLevels(XmlDocument xdoc)
         {
-            foreach ( XmlElement xboard in xdoc.GetElementsByTagName("board"))
+            foreach (XmlElement xboard in xdoc.GetElementsByTagName("board"))
             {
                 string name = xboard.GetAttribute("name");
                 if (!dictBoard.ContainsKey(name))
-                { 
+                {
                     dictBoard.Add(name, xboard);
                 }
-                
+
             }
         }
 
-        
-
-        private void btnLoad_Click(object sender, EventArgs e)
+        private void BtnLoad_Click(object sender, EventArgs e)
         {
             if (listBoxBoards.SelectedIndex >= 0)
             {
@@ -340,8 +309,7 @@ namespace Lazer
             }
         }
 
-        
-        private void radio_CheckedChanged(object sender, EventArgs e)
+        private void Radio_CheckedChanged(object sender, EventArgs e)
         {
             listBlockView.Enabled = radio_place.Checked;
 
@@ -353,19 +321,16 @@ namespace Lazer
                     listBlockView.Items[0].Selected = true;
                 }
             }
-
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
             controlBoard.board.clear(true);
             controlBoard.Test();
             textBoxLevel.Clear();
         }
 
-
-
-        private void listBoxBoards_Click(object sender, EventArgs e)
+        private void ListBoxBoards_Click(object sender, EventArgs e)
         {
             if (listBoxBoards.SelectedIndex >= 0)
             {
@@ -373,8 +338,5 @@ namespace Lazer
                 textBoxLevel.Text = controlBoard.board.name;
             }
         }
-
-
-        
     }
 }

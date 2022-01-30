@@ -12,19 +12,16 @@ namespace Lazer
         private Direction _direction = Direction.Left;
         Color innerColor = Color.Transparent;
 
-
         public FilterHV() :base()
         {
             isMovable = false;
         }
-
 
         public FilterHV(Mode m, Direction dir) : this()
         {
             Mode = m;
             Direction = dir;
         }
-
 
         public Mode Mode
         {
@@ -39,7 +36,6 @@ namespace Lazer
             }
         }
 
-
         public Direction Direction
         {
             get { return _direction; }
@@ -53,10 +49,8 @@ namespace Lazer
             }
         }
 
-
-        
         // return flipped input ie to propagate the ray
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             innerColor = Color.Transparent;
             if (_mode == Mode.Horizontal)
@@ -66,7 +60,7 @@ namespace Lazer
                     Color.Transparent, 
                     input.left == Color.Transparent ? input.right : input.left, 
                     input.right == Color.Transparent ? input.left : input.right);
-                innerColor = output.hasLeft ? output.left : output.right;
+                innerColor = output.HasLeft ? output.left : output.right;
             }
             else if (_mode == Mode.Vertical)
             {
@@ -75,20 +69,20 @@ namespace Lazer
                     input.down == Color.Transparent ? input.up : input.down, 
                     Color.Transparent, 
                     Color.Transparent);
-                innerColor = output.hasUp ? output.up : output.down;
+                innerColor = output.HasUp ? output.up : output.down;
             }
             else //if (_mode == Mode.Direction)
             {
                 output = new Ray();
                 if (input[Direction] == Color.Transparent)
                 {
-                    output[Direction] = input[Ray.opposite(Direction)];
+                    output[Direction] = input[Ray.Opposite(Direction)];
                     innerColor = output[Direction];
                 }
                 else
                 {
                     output[Direction] = input[Direction];
-                    innerColor = input[Ray.opposite(Direction)];
+                    innerColor = input[Ray.Opposite(Direction)];
                 }
             }
             
@@ -96,9 +90,7 @@ namespace Lazer
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
@@ -130,7 +122,7 @@ namespace Lazer
                 
                 brushes[0] = new TextureBrush(Texture.extract(TextureType.FilterHV, angle));
                 
-                laser = output.none ? null : new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray, output.hasLeft || output.hasRight ? 0 : 90), innerColor));
+                laser = output.None ? null : new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray, output.HasLeft || output.HasRight ? 0 : 90), innerColor));
                 
                 needRefresh = false;
             }
@@ -148,7 +140,6 @@ namespace Lazer
                 if (laser != null) g.FillRectangle(laser, rect);
             }
         }
-
 
         public override string ToString()
         {
@@ -172,9 +163,7 @@ namespace Lazer
             return s + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("mode", Mode.ToString());
@@ -185,8 +174,7 @@ namespace Lazer
             return parent;
         }
 
-
-        public static FilterHV deserialize(XmlElement node)
+        public static FilterHV Deserialize(XmlElement node)
         {
             FilterHV obj = new FilterHV();
             if (node.HasAttribute("mode"))
@@ -202,8 +190,7 @@ namespace Lazer
             return obj;
         }
 
-
-        public void rotate()
+        public void Rotate()
         {
             if (Mode == Mode.Direction)
             {

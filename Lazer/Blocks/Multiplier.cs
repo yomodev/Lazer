@@ -8,22 +8,18 @@ namespace Lazer
     {
         protected TextureBrush[] brushes = new TextureBrush[3];
         private Direction _direction = Direction.Left;
-        private Color DefaultColor = Color.Gray;
+        private readonly Color DefaultColor = Color.Gray;
         private Color InnerColor = Color.Gray;
-
 
         public Multiplier() : base()
         {
             isMovable = true;
         }
 
-
         public Multiplier(Direction dir) : this()
         {
             Direction = dir;
         }
-
-
 
         public Direction Direction
         {
@@ -38,10 +34,8 @@ namespace Lazer
             }
         }
 
-
-
         // return flipped input ie to propagate the ray
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             InnerColor = input[Direction] == Color.Transparent ? DefaultColor : input[Direction];
             output = new Ray(InnerColor);
@@ -50,7 +44,7 @@ namespace Lazer
             output.left = input.Coalesce(Direction.Left, InnerColor);
             output.right = input.Coalesce(Direction.Right, InnerColor);*/
             output[Direction] = Color.Transparent;
-            
+
             /*
             // if there is more than one input stop!
             Ray test = new Ray(input);
@@ -72,9 +66,7 @@ namespace Lazer
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
@@ -91,7 +83,7 @@ namespace Lazer
                 //brushes[1] = new TextureBrush(Texture.colorize(Texture.extract(TextureType.Multiply), InnerColor));
                 brushes[1] = new TextureBrush(Texture.extract(TextureType.Multiply));
                 brushes[2] = new TextureBrush(Texture.colorize(Texture.extract(TextureType.InputArrow, angle), Color.Gray));
-                
+
                 needRefresh = false;
             }
 
@@ -103,7 +95,6 @@ namespace Lazer
                 }
             }
         }
-
 
         public override string ToString()
         {
@@ -118,17 +109,14 @@ namespace Lazer
             return s + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("direction", Direction.ToString());
             return parent;
         }
 
-
-        public static Multiplier deserialize(XmlElement node)
+        public static Multiplier Deserialize(XmlElement node)
         {
             Multiplier obj = new Multiplier();
             if (node.HasAttribute("direction"))
@@ -139,8 +127,7 @@ namespace Lazer
             return obj;
         }
 
-
-        public void rotate()
+        public void Rotate()
         {
             Direction = (Direction)(Enum.GetValues(Direction.GetType()).Length == (int)Direction + 1 ? 0 : (int)Direction + 1);
         }

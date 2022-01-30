@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
-using System.IO;
-using System.Reflection;
-using System.Diagnostics;
-using Combinatorics.Collections;
 using System.Xml;
-
 
 namespace Lazer
 {
@@ -18,11 +9,11 @@ namespace Lazer
     {
         public Board board;
         private Bitmap _bitmap;
-        private Point _overPoint = new Point(0, 0);
+        private Point _overPoint = new(0, 0);
         private Point _selectedPoint;
-        private Rectangle boardRectangle = new Rectangle();
-        private Bitmap cursorOK;
-        private Bitmap cursorKO;
+        private Rectangle boardRectangle = new();
+        private readonly Bitmap cursorOK;
+        private readonly Bitmap cursorKO;
         private bool _editing = false;
         private bool isDragging = false;
 
@@ -32,8 +23,6 @@ namespace Lazer
         public event SelectionChangeDelegate OnSelectionChange;
         public delegate void SelectionChangeDelegate(object sender, Point selectedPoint);
 
-
-
         public ControlBoard()
         {
             LoadBoard();
@@ -41,55 +30,45 @@ namespace Lazer
             cursorKO = Texture.colorize(Texture.extract(TextureType.Pointer), Color.Red);
         }
 
-
-
         public void Redraw(bool showLaser)
         {
             _bitmap = board.draw(showLaser);
             Invalidate();
         }
 
-
-
         public bool Test()
         {
             bool win = board.process(true);
             Redraw(true);
 
-            if (OnCheck != null)
-            { 
-                OnCheck(this, win);
-            }
-            
+            OnCheck?.Invoke(this, win);
+
             return win;
         }
-
-
 
         protected override void OnPaint(PaintEventArgs pe)
         {
             base.OnPaint(pe);
-            
+
             if (_bitmap != null)
             {
                 pe.Graphics.DrawImageUnscaled(_bitmap, 0, 0);
 
                 pe.Graphics.DrawImageUnscaled(
-                        (overBlock.isMovable && !isDragging)
-                        || isEditing
-                        || (isDragging && overBlock is Empty) ? cursorOK : cursorKO, 
-                        _overPoint.X * Board.squareSize, 
+                        (OverBlock.isMovable && !isDragging)
+                        || IsEditing
+                        || (isDragging && OverBlock is Empty) ? cursorOK : cursorKO,
+                        _overPoint.X * Board.squareSize,
                         _overPoint.Y * Board.squareSize);
             }
         }
 
-        
-        public Block getBlock(Point p)
+        public Block GetBlock(Point p)
         {
             return board.getBlock(p);
         }
 
-        public Block getBlock(int x, int y)
+        public Block GetBlock(int x, int y)
         {
             return board.getBlock(x, y);
         }
@@ -106,19 +85,17 @@ namespace Lazer
             set { board.setBlock(x, y, value); }
         }
 
-        public bool setBlock(int x, int y, Block b)
+        public bool SetBlock(int x, int y, Block b)
         {
             return board.setBlock(x, y, b);
         }
 
-        public bool setBlock(Point p, Block b)
+        public bool SetBlock(Point p, Block b)
         {
             return board.setBlock(p, b);
         }
 
-
-
-        public bool isEditing
+        public bool IsEditing
         {
             get { return _editing; }
             set
@@ -131,8 +108,7 @@ namespace Lazer
             }
         }
 
-
-        public Block selectedBlock
+        public Block SelectedBlock
         {
             get
             {
@@ -140,13 +116,11 @@ namespace Lazer
             }
         }
 
-
-
-        public Point selectedPoint
+        public Point SelectedPoint
         {
             get
             {
-                if (_selectedPoint == null || _selectedPoint == Point.Empty)
+                if (_selectedPoint == Point.Empty)
                 {
                     _selectedPoint = new Point(0, 0);
                 }
@@ -155,8 +129,7 @@ namespace Lazer
             }
         }
 
-
-        public Block overBlock
+        public Block OverBlock
         {
             get
             {
@@ -164,12 +137,11 @@ namespace Lazer
             }
         }
 
-
-        public Point overPoint
+        public Point OverPoint
         {
             get
             {
-                if (_overPoint == null || _overPoint == Point.Empty)
+                if (_overPoint == Point.Empty)
                 {
                     _overPoint = new Point(0, 0);
                 }
@@ -177,9 +149,9 @@ namespace Lazer
                 return _overPoint;
             }
 
-            set 
+            set
             {
-                if(_overPoint != value)
+                if (_overPoint != value)
                 {
                     _overPoint = value;
                     if (isDragging) Redraw(false); else Invalidate();
@@ -187,76 +159,66 @@ namespace Lazer
             }
         }
 
-        
+
         protected override void OnMouseUp(MouseEventArgs e)
         {
             base.OnMouseUp(e);
 
             if (e.Button == MouseButtons.Right && board[_overPoint].isMovable)
             {
-                overBlock.isPinned = !overBlock.isPinned;
+                OverBlock.isPinned = !OverBlock.isPinned;
             }
-            
+
             if (isDragging)
             {
                 if (
-                    overPoint != selectedPoint
+                    OverPoint != SelectedPoint
                     &&
-                    ( isEditing || (selectedBlock.isMovable && overBlock is Empty) )
+                    (IsEditing || (SelectedBlock.isMovable && OverBlock is Empty))
                     )
                 {
-                    board.swap(overPoint, selectedPoint);
-                    _selectedPoint = overPoint;
+                    board.swap(OverPoint, SelectedPoint);
+                    _selectedPoint = OverPoint;
                 }
                 isDragging = false;
             }
             else
             {
-                _selectedPoint = overPoint;
+                _selectedPoint = OverPoint;
             }
 
-            /*if (isEditing) Redraw(false); else*/ Test();
+            /*if (isEditing) Redraw(false); else*/
+            Test();
 
-            if (OnSelectionChange != null)
-            {
-                OnSelectionChange(this, _selectedPoint);
-            }
+            OnSelectionChange?.Invoke(this, _selectedPoint);
         }
-
-
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
             base.OnMouseDown(e);
 
-            _selectedPoint = overPoint;
+            _selectedPoint = OverPoint;
             isDragging = true;
         }
-
-
 
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
-            
-            Point p = new Point(e.X / Board.squareSize, e.Y / Board.squareSize);
+
+            Point p = new(e.X / Board.squareSize, e.Y / Board.squareSize);
             if (boardRectangle.Contains(p))
             {
-                overPoint = p;
+                OverPoint = p;
             }
         }
 
-
-        
         protected override void OnMouseLeave(EventArgs e)
         {
             base.OnMouseLeave(e);
-            
+
             isDragging = false;
             Invalidate();
         }
-
-
 
         public void LoadBoard(XmlElement xmlElement = null)
         {

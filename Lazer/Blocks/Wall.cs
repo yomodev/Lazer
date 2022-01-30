@@ -8,19 +8,16 @@ namespace Lazer
     {
         private TextureBrush brush;
 
-
         // wall is an opaque object: do not return any ray
         public Wall()
         {
             brush = new TextureBrush(Texture.extract(TextureType.Wall));
         }
-        
 
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             g.FillRectangle(brush, rect);
         }
-
 
         /*
         public override int CompareTo(IBlock obj)
@@ -30,25 +27,21 @@ namespace Lazer
         }
         */
 
-
         public override string ToString()
         {
             return "Wall";
         }
 
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             return parent;
         }
 
-
-        public static Block deserialize(XmlElement node)
+        public static Block Deserialize(XmlElement node)
         {
             Wall obj = new Wall();
             return obj;
         }
-        
     }
 }

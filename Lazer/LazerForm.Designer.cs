@@ -70,7 +70,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(255, 495);
             this.tabControl1.TabIndex = 3;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -96,7 +96,7 @@
             this.btnLoad.TabIndex = 6;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            this.btnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
             // 
             // btnSolve
             // 
@@ -109,7 +109,7 @@
             this.btnSolve.Text = "Solve";
             this.toolTips.SetToolTip(this.btnSolve, "Right click a block to mark as fixed.");
             this.btnSolve.UseVisualStyleBackColor = true;
-            this.btnSolve.Click += new System.EventHandler(this.btnSolve_Click);
+            this.btnSolve.Click += new System.EventHandler(this.BtnSolve_Click);
             // 
             // listBoxBoards
             // 
@@ -122,7 +122,7 @@
             this.listBoxBoards.Size = new System.Drawing.Size(227, 384);
             this.listBoxBoards.Sorted = true;
             this.listBoxBoards.TabIndex = 3;
-            this.listBoxBoards.Click += new System.EventHandler(this.listBoxBoards_Click);
+            this.listBoxBoards.Click += new System.EventHandler(this.ListBoxBoards_Click);
             // 
             // tabPage2
             // 
@@ -152,7 +152,7 @@
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // panel1
             // 
@@ -176,7 +176,7 @@
             this.radio_select.TabStop = true;
             this.radio_select.Text = "Select / Move";
             this.radio_select.UseVisualStyleBackColor = true;
-            this.radio_select.CheckedChanged += new System.EventHandler(this.radio_CheckedChanged);
+            this.radio_select.CheckedChanged += new System.EventHandler(this.Radio_CheckedChanged);
             // 
             // radio_place
             // 
@@ -188,7 +188,7 @@
             this.radio_place.TabIndex = 10;
             this.radio_place.Text = "Place";
             this.radio_place.UseVisualStyleBackColor = true;
-            this.radio_place.CheckedChanged += new System.EventHandler(this.radio_CheckedChanged);
+            this.radio_place.CheckedChanged += new System.EventHandler(this.Radio_CheckedChanged);
             // 
             // btnRemove
             // 
@@ -200,7 +200,7 @@
             this.btnRemove.TabIndex = 8;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            this.btnRemove.Click += new System.EventHandler(this.BtnRemove_Click);
             // 
             // listBlockView
             // 
@@ -230,7 +230,7 @@
             this.propertyGrid1.Name = "propertyGrid1";
             this.propertyGrid1.Size = new System.Drawing.Size(228, 199);
             this.propertyGrid1.TabIndex = 6;
-            this.propertyGrid1.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.propertyGrid1_PropertyValueChanged);
+            this.propertyGrid1.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.PropertyGrid1_PropertyValueChanged);
             // 
             // btnSave
             // 
@@ -241,7 +241,7 @@
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // label1
             // 
@@ -268,18 +268,18 @@
             this.fileSystemWatcher.NotifyFilter = System.IO.NotifyFilters.LastWrite;
             this.fileSystemWatcher.Path = ".";
             this.fileSystemWatcher.SynchronizingObject = this;
-            this.fileSystemWatcher.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher_Changed);
+            this.fileSystemWatcher.Changed += new System.IO.FileSystemEventHandler(this.FileSystemWatcher_Changed);
             // 
             // controlBoard
             // 
             this.controlBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.controlBoard.isEditing = false;
+            this.controlBoard.IsEditing = false;
             this.controlBoard.Location = new System.Drawing.Point(279, 18);
             this.controlBoard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.controlBoard.Name = "controlBoard";
-            this.controlBoard.overPoint = new System.Drawing.Point(0, 0);
+            this.controlBoard.OverPoint = new System.Drawing.Point(0, 0);
             this.controlBoard.Size = new System.Drawing.Size(494, 494);
             this.controlBoard.TabIndex = 4;
             this.controlBoard.TabStop = false;

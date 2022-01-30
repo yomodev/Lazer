@@ -7,6 +7,6 @@ namespace Lazer
 {
     interface IRotable
     {
-        void rotate();
+        void Rotate();
     }
 }

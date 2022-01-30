@@ -14,55 +14,44 @@ namespace Lazer
         NWSE  // \
     };
 
-
-
     public enum Direction
     {
-        Up, 
+        Up,
         Right,
-        Down, 
+        Down,
         Left
     };
 
-
     public enum Mode
-    { 
+    {
         Horizontal,
         Vertical,
         Direction
     };
 
-
-
-    class Block  :IComparable<Block>
+    class Block : IComparable<Block>
     {
         public bool isMovable = false;
         public bool isPinned = false;
         protected bool needRefresh = true;
         protected Ray output = new Ray();
-        
-
-        public virtual void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public virtual void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         { }
 
-
-        public virtual Ray process(Ray ray)
+        public virtual Ray Process(Ray ray)
         {
             return new Ray(Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent);
         }
-        
 
         public virtual int CompareTo(Block obj)
         {
             return this.ToString().CompareTo(obj.ToString());
         }
 
-
-        public virtual XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public virtual XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             return parent;
         }
-
 
         /*public static void deserialize(XmlElement node, object obj)
         {
@@ -73,7 +62,5 @@ namespace Lazer
 
             return obj;
         }*/
-
-        
     }
 }

@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Xml;
 
-
 namespace Lazer
 {
     class Splitter : Block, IRotable
@@ -11,8 +10,6 @@ namespace Lazer
         private TextureBrush brush;
         private TextureBrush laser1;
         private TextureBrush laser2;
-
-
 
         public Direction Direction
         {
@@ -26,14 +23,11 @@ namespace Lazer
                 }
             }
         }
-        
 
-
-        public Splitter() :base()
-        { 
+        public Splitter() : base()
+        {
             isMovable = true;
         }
-
 
         // if hitten by a ray in its input direction return 2 perpendicolar rays as output (same color as the input)
         public Splitter(Direction dir) : this()
@@ -41,28 +35,26 @@ namespace Lazer
             Direction = dir;
         }
 
-
-
         // if hitten by a ray in its input direction return 2 perpendicolar rays as output (same color as the input)
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             output = new Ray();
             switch (_direction)
             {
-                case Direction.Up: 
-                    output  = new Ray(Color.Transparent, Color.Transparent, input.up, input.up); 
+                case Direction.Up:
+                    output = new Ray(Color.Transparent, Color.Transparent, input.up, input.up);
                     break;
 
-                case Direction.Down: 
-                    output = new Ray(Color.Transparent, Color.Transparent, input.down, input.down); 
+                case Direction.Down:
+                    output = new Ray(Color.Transparent, Color.Transparent, input.down, input.down);
                     break;
 
-                case Direction.Left: 
+                case Direction.Left:
                     output = new Ray(input.left, input.left, Color.Transparent, Color.Transparent);
                     break;
 
-                case Direction.Right: 
-                    output = new Ray(input.right, input.right, Color.Transparent, Color.Transparent); 
+                case Direction.Right:
+                    output = new Ray(input.right, input.right, Color.Transparent, Color.Transparent);
                     break;
             }
 
@@ -70,9 +62,7 @@ namespace Lazer
             return output;
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             if (needRefresh)
             {
@@ -89,12 +79,12 @@ namespace Lazer
                 laser1 = null;
                 Color c = Color.Transparent;
 
-                if (output.hasLeft && output.left == output.right)
+                if (output.HasLeft && output.left == output.right)
                 {
                     c = output.left;
                     laser1 = new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray), c));
                 }
-                else if (output.hasUp && output.up == output.down)
+                else if (output.HasUp && output.up == output.down)
                 {
                     c = output.up;
                     laser1 = new TextureBrush(Texture.colorize(Texture.extract(TextureType.Ray, 90), c));
@@ -135,7 +125,6 @@ namespace Lazer
             }
         }
 
-
         /*
         public override int CompareTo(IBlock obj)
         {
@@ -145,8 +134,6 @@ namespace Lazer
             }
             return obj == null ? 1 : -1;
         }*/
-
-
 
         public override string ToString()
         {
@@ -161,17 +148,14 @@ namespace Lazer
             return s + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("direction", Direction.ToString());
             return parent;
         }
 
-
-        public static Splitter deserialize(XmlElement node)
+        public static Splitter Deserialize(XmlElement node)
         {
             Splitter obj = new Splitter();
 
@@ -183,12 +167,9 @@ namespace Lazer
             return obj;
         }
 
-
-
-        public void rotate()
+        public void Rotate()
         {
             Direction = (Direction)(Enum.GetValues(Direction.GetType()).Length == (int)Direction + 1 ? 0 : (int)Direction + 1);
         }
-
     }
 }

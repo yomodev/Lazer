@@ -58,22 +58,16 @@ namespace Lazer
             }
         }
 
-
-
-        public TetraBlock() :base()
+        public TetraBlock() : base()
         {
             _color = new Color[4] { Color.White, Color.Red, Color.Lime, Color.Blue };
         }
-
-
 
         public TetraBlock(Direction dir, Color[] c) : base(dir)
         {
             _color = c != null && c.Length == 4 ? c : new Color[4] { Color.White, Color.Red, Color.Lime, Color.Blue };
         }
 
-
-        
         public override string ToString()
         {
             string s = "TetraBlock(";
@@ -88,9 +82,7 @@ namespace Lazer
             return s + ", " + Color1 + ", " + Color2 + ", " + Color3 + ", " + Color4 + ")";
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("direction", Direction.ToString());
@@ -101,8 +93,7 @@ namespace Lazer
             return parent;
         }
 
-
-        public static new TetraBlock deserialize(XmlElement node)
+        public static new TetraBlock Deserialize(XmlElement node)
         {
             TetraBlock obj = new TetraBlock();
 
@@ -130,7 +121,5 @@ namespace Lazer
 
             return obj;
         }
-
     }
-
 }

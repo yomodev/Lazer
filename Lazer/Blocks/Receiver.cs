@@ -3,7 +3,6 @@ using System.Drawing;
 using System.ComponentModel;
 using System.Xml;
 
-
 namespace Lazer
 {
     class Receiver : Block, IRotable
@@ -12,7 +11,6 @@ namespace Lazer
         protected TextureBrush[] brushes = new TextureBrush[3];
         private bool _lighting = false;
         private Direction _direction = Direction.Left;
-
 
         public Color Color
         {
@@ -26,7 +24,6 @@ namespace Lazer
                 }
             }
         }
-
         
         public Direction Direction
         {
@@ -40,7 +37,6 @@ namespace Lazer
                 }
             }
         }
-
 
         [Browsable(false)]
         public bool Lighting
@@ -56,13 +52,10 @@ namespace Lazer
             }
         }
 
-
-
         public Receiver() : base()
         {
             isMovable = false;
         }
-
 
         // if receive a ray of color c in specified direction it will light
         public Receiver(Direction dir, Color c) : this()
@@ -71,18 +64,14 @@ namespace Lazer
             Color = c;
         }
 
-
-
         // if receive a ray of color c in specified direction it will light
-        public override Ray process(Ray input)
+        public override Ray Process(Ray input)
         {
             Lighting = input[_direction] == _color;
             return new Ray();
         }
 
-
-
-        public override void draw(Graphics g, Rectangle rect, bool showLaser = true)
+        public override void Draw(Graphics g, Rectangle rect, bool showLaser = true)
         {
             // speedup drawing
             if (needRefresh)
@@ -114,7 +103,6 @@ namespace Lazer
             }
         }
 
-
         /*
         public override int CompareTo(IBlock obj)
         {
@@ -129,8 +117,6 @@ namespace Lazer
             return obj == null ? 1 : -1;
         }*/
 
-
-
         public override string ToString()
         {
             string s = "Receiver(";
@@ -144,15 +130,12 @@ namespace Lazer
             return s + ", " + _color + ")";
         }
 
-
-        public void reset()
+        public void Reset()
         {
             Lighting = false;
         }
 
-
-
-        public override XmlNode serialize(XmlDocument xdocument, XmlElement parent)
+        public override XmlNode Serialize(XmlDocument xdocument, XmlElement parent)
         {
             parent.SetAttribute("type", GetType().FullName);
             parent.SetAttribute("direction", Direction.ToString());
@@ -160,8 +143,7 @@ namespace Lazer
             return parent;
         }
 
-
-        public static Block deserialize(XmlElement node)
+        public static Block Deserialize(XmlElement node)
         {
             Receiver obj = new Receiver();
 
@@ -177,9 +159,7 @@ namespace Lazer
 
             return obj;
         }
-
-
-        public void rotate()
+        public void Rotate()
         {
             Direction = (Direction)(Enum.GetValues(Direction.GetType()).Length == (int)Direction + 1 ? 0 : (int)Direction + 1);
         }
